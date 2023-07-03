@@ -13,7 +13,7 @@
 <body>
     <!-- header -->
     <section class="min-h-[895px] bg-primary md:pt-10 relative overflow-x-clip">
-        <header class="bg-white md:rounded-[20px] md:w-[1331px] w-full mx-auto md:h-[81px] h-[55px] flex items-center justify-between md:px-[49px] px-5 navbar-fixed shadow-[0_5px_50px_0_rgba(0,0,0,0.25)]">
+        <header class="bg-white md:rounded-[20px] md:w-[1331px] w-full mx-auto md:h-[81px] h-[55px] flex items-center justify-between md:px-[49px] px-5 shadow-[0_5px_50px_0_rgba(0,0,0,0.25)] navbar-fixed">
             <div class="flex-1">
                 <img src="../assets/images/logo.png" alt="Logo" class="md:-ml-[95px] -ml-[40px] md:w-[320px] w-full md:h-[50px] h-auto" />
             </div>
@@ -43,13 +43,15 @@
         </header>
         <div class="container mx-auto md:px-0 px-5 pt-[95px]">
             <div class="flex justify-between items-center">
-                <div class="flex-1 z-[1]">
+                <div class="flex-1 z-[1] fade-to-right">
                     <h1 class="text-white md:text-[65px] text-[40px] font-bold">Your One Stop Pet Clinic Solution</h1>
                     <p class="text-white text-lg mb-4 md:text-[18px] text-[14px]">We help veterinarians and veterinary clinic owners to manage clinic operations from client arrivals, bookings, payments, patient ambulators, databases of tools and medicines, and financial reports that can be updated in real time</p>
                     <a href="#" class="btn bg-white text-primary">Book FREE Demo</a>
                 </div>
                 <div class="flex md:flex-1 justify-end relative">
-                    <img src="../assets//images/laptop-1.png" alt="image" class="w-[519px] h-[310px] -mr-10 z-[1] md:block hidden" />
+                    <div class="z-[1] fade-to-left">
+                        <img src="../assets//images/laptop-1.png" alt="image" class="w-[519px] h-[310px] -mr-10 md:block hidden" />
+                    </div>
 
                     <span class="absolute w-[527px] h-[527px] bg-white rounded-full bg-gradient-to-t from-primary to-[#FFFFFF] opacity-10 -top-20 -right-60"></span>
                 </div>
@@ -57,7 +59,7 @@
         </div>
     </section>
 
-    <section class="relative">
+    <section class="relative fade-to-top">
         <div class="md:flex gap-[18px] space-y-[18px] md:space-y-0 px-5 justify-center -mt-[175px] md:-bottom-16 left-0 right-0">
             <div class="max-w-[374px] h-[246px] mx-auto md:mx-0 border-[1px] border-[#085EB5] shadow-xl rounded-lg bg-white px-7 py-5">
                 <div class="pt-[80px]">
@@ -82,7 +84,7 @@
     </section>
 
     <!-- powered by -->
-    <section class="container mx-auto mt-[110px] md:px-20 px-5 mb-[114px]">
+    <section class="container mx-auto mt-[110px] md:px-20 px-5 mb-[114px] fade-to-top">
         <div class="flex flex-col items-center mb-[10px]">
             <h4 class="md:text-[20px] text-[16px] font-semibold text-[#C4C7CF]">POWERED BY</h4>
             <img src="../assets/images/logo-vettalk.png" alt="Powered By" class="md:w-[382px] md:h-[144px]" />
@@ -91,7 +93,7 @@
     </section>
 
     <!-- adds -->
-    <section class="container mx-auto md:px-20 px-5 md:flex justify-end relative mb-[137px] block">
+    <section class="container mx-auto md:px-20 px-5 md:flex justify-end relative mb-[137px] block fade-to-top">
         <div class="md:flex md:w-[959px] md:h-[389px] rounded-[30px] shadow-lg border-[1px] border-[#F5F9FC]">
             <span class="md:min-w-[419px] min-h-[150px] block bg-gradient-to-t from-[#2469DF] to-[#F5F9FC] rounded-[30px]"></span>
             <div class="md:pl-[31px] md:pr-[49px] md:py-12 px-5 py-8">
@@ -105,7 +107,7 @@
     </section>
 
     <!-- all feature -->
-    <section class="bg-gradient-to-t from-[#D6E7FA] to-[#d6e7fa00] pt-[79px] pb-[90px] mb-[95px]">
+    <section class="bg-gradient-to-t from-[#D6E7FA] to-[#d6e7fa00] pt-[79px] pb-[90px] mb-[95px] fade-to-top">
         <div class="container mx-auto md:px-20 px-5">
             <h1 class="text-primary md:text-[65px] text-[40px] font-bold text-center mb-[33px]">Watch All Feature</h1>
             <div class="border-[2px] md:rounded-[30px] rounded-2xl border-primary mb-[44px] overflow-clip">
@@ -118,12 +120,12 @@
     </section>
 
     <!-- review -->
-    <section class="container mx-auto md:px-16 px-5 mb-[133px]">
+    <section class="container mx-auto md:px-16 px-5 mb-[133px] fade-to-bottom">
         <div class="md:columns-2 md:gap-11 space-bottom-8">
-            <div class="w-full inline-block">
+            <div class="w-full inline-block fade-to-top">
                 <h1 class="text-primary md:text-[65px] text-[40px] font-bold md:-ml-10">What They Say About Us?</h1>
             </div>
-            <div class="w-full inline-block">
+            <div class="w-full inline-block fade-to-top">
                 <div class="w-full md:px-8 px-5 md:py-7 py-4 rounded-[10px] bg-primary text-white">
                     <div class="flex items-center md:flex-nowrap flex-wrap">
                         <div class="flex items-center">
@@ -142,7 +144,7 @@
                     <p class="md:text-[18px] text-[14px]">We help veterinarians and veterinary clinic owners to manage clinic operations from client arrivals, bookings, payments, patient ambulator, databases of tools and medicines, and financial reports that can be updated in real time</p>
                 </div>
             </div>
-            <div class="w-full inline-block">
+            <div class="w-full inline-block fade-to-top">
                 <div class="w-full md:px-8 px-5 md:py-7 py-4 rounded-[10px] border-[1px] border-[#D9D9D9]">
                     <div class="flex items-center md:flex-nowrap flex-wrap">
                         <div class="flex items-center">
@@ -161,7 +163,7 @@
                     <p class="md:text-[18px] text-[14px]">We help veterinarians and veterinary clinic owners to manage clinic operations from client arrivals, bookings, payments, patient ambulator, databases of tools and medicines, and financial reports that can be updated in real time</p>
                 </div>
             </div>
-            <div class="w-full inline-block">
+            <div class="w-full inline-block fade-to-top">
                 <div class="w-full md:px-8 px-5 md:py-7 py-4 rounded-[10px] border-[1px] border-[#D9D9D9]">
                     <div class="flex items-center md:flex-nowrap flex-wrap">
                         <div class="flex items-center">
@@ -180,7 +182,7 @@
                     <p class="md:text-[18px] text-[14px]">We help veterinarians and veterinary clinic owners to manage clinic operations from client arrivals, bookings, payments, patient ambulator, databases of tools and medicines, and financial reports that can be updated in real time</p>
                 </div>
             </div>
-            <div class="w-full inline-block">
+            <div class="w-full inline-block fade-to-top">
                 <div class="w-full md:px-8 px-5 md:py-7 py-4 rounded-[10px] border-[1px] border-[#D9D9D9]">
                     <div class="flex items-center md:flex-nowrap flex-wrap">
                         <div class="flex items-center">
@@ -206,7 +208,7 @@
     <section class="relative overflow-clip">
         <div class="bg-primary min-h-[404px]">
             <div class="container mx-auto md:px-0 px-5">
-                <div class="pt-[58px] pb-[73px] max-w-[750px]">
+                <div class="pt-[58px] pb-[73px] max-w-[750px] fade-to-right">
                     <h1 class="md:text-[50px] text-[30px] text-white font-bold mb-[15px]">Say Goodbye to Hassles Meet Your Effortless Vet Clinics Operations</h1>
                     <a href="#" class="btn bg-white text-primary">Book FREE Demo Now</a>
                 </div>
@@ -221,8 +223,10 @@
         <div class="container mx-auto absolute top-0 right-0 left-0">
             <div>
                 <span class="absolute w-[544px] h-[544px] rounded-full bg-gradient-to-b from-primary to-[#FFFFFF] opacity-10 right-[25px] top-[85px]"></span>
-                <img src="../assets/images/monitor-1.png" alt="Image" class="absolute md:w-auto md:top-[115px] md:right-[-80px] right-0 top-[321px] w-[70%]" />
-                <img src="../assets/images/laptop-3.png" alt="Image" class="absolute md:w-auto md:top-[345px] md:right-[300px] right-[125px] top-[395px] w-[52%]" />
+                <div class="fade-to-left h-screen">
+                    <img src="../assets/images/monitor-1.png" alt="Image" class="absolute md:w-auto md:top-[115px] md:right-[-80px] right-0 top-[321px] w-[70%]" />
+                    <img src="../assets/images/laptop-3.png" alt="Image" class="absolute md:w-auto md:top-[345px] md:right-[300px] right-[125px] top-[395px] w-[52%]" />
+                </div>
             </div>
         </div>
     </section>

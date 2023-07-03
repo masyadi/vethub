@@ -19,9 +19,46 @@
         margin-top: calc(2rem * var(--tw-space-y-reverse));
         margin-bottom: calc(2rem *  calc(1 - var(--tw-space-y-reverse)));
     }
+    /* Navbar fixed */
     .navbar-fixed {
-        @apply fixed z-[999] bg-white border-b-[1px] border-black border-opacity-10;
-        @apply md:relative md:bg-opacity-100 md:border-b-0;
-        backdrop-filter: blur(5px);
+        @apply fixed md:relative top-0 left-0 right-0 z-[999];
+        transition: 0.5s ease;
+    }
+    .navbar-fixed.active {
+        @apply fixed md:h-[70px] md:rounded-xl;
+    }
+
+    /* Animation */
+    .fade-to-left {
+        position: relative;
+        transform: translateX(150px);
+        opacity: 0;
+        transition: 1.5s all ease;
+    }
+    .fade-to-right {
+        position: relative;
+        transform: translateX(-150px);
+        opacity: 0;
+        transition: 1.5s all ease;
+    }
+    .fade-to-top {
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: 1.5s all ease;
+    }
+    .fade-to-bottom {
+        position: relative;
+        transform: translateY(-150px);
+        opacity: 0;
+        transition: 1.5s all ease;
+    }
+    .fade-to-left.active, .fade-to-right.active {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .fade-to-top.active, .fade-to-bottom.active {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
