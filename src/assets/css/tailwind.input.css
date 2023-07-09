@@ -11,7 +11,7 @@
 
 @layer utilities {
     .btn {
-        @apply px-6 py-3 rounded-[40px] font-semibold md:text-[30px] inline-block;
+        @apply px-6 py-3 rounded-[40px] font-semibold lg:text-[20px] xl:text-[30px] inline-block;
         box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.30);
     }
     .space-bottom-8 > :not([hidden]) {
@@ -21,11 +21,11 @@
     }
     /* Navbar fixed */
     .navbar-fixed {
-        @apply fixed md:relative top-0 left-0 right-0 z-[999];
+        @apply fixed lg:relative top-0 left-0 right-0 z-[999];
         transition: 0.5s ease;
     }
     .navbar-fixed.active {
-        @apply fixed md:h-[70px] md:rounded-xl;
+        @apply fixed lg:h-[70px] lg:rounded-xl lg:mx-5 xl:mx-auto lg:w-auto;
     }
 
     /* Animation */
