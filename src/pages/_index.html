@@ -7,102 +7,74 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
     <link href="../assets/css/tailwind.css" rel="stylesheet" />
 </head>
 
 <body>
     <!-- header -->
-    <section class="relative overflow-x-clip px-5">
-        <header class="bg-white lg:rounded-[20px] lg:max-w-[1790px] w-full mx-auto lg:h-[66px] md:h-[50px] h-[55px] flex items-center justify-between lg:px-[49px] px-5 lg:mt-[56px] shadow-[0_5px_50px_0_rgba(0,0,0,0.25)] navbar-fixed">
-            <div class="flex-1 flex items-center">
-                <a href="index.html" class="lg:-ml-[85px] md:-ml-[65px] -ml-[40px]">
-                    <img src="../assets/images/logo.png" alt="Logo" class="max-h-[41px]" />
-                </a>
-                <div class="hidden lg:block lg:-ml-[30px] xl:ml-0">
-                    <ul class="lg:flex items-center lg:gap-[15px] xl:gap-[66px]">
-                        <li><a href="#" class="text-[20px] font-semibold text-primary lang" key="about">About us</a></li>
-                        <li><a href="#" class="text-[20px] font-semibold text-primary lang" key="feature">Feature</a></li>
-                        <li><a href="./price.html" class="text-[20px] font-semibold text-primary lang" key="price">Price</a></li>
-                    </ul>
-                </div>
+    <section class="min-h-[695px] md:min-h-[690px] lg:min-h-[835px] xl:min-h-[895px] bg-primary lg:pt-10 relative overflow-x-clip px-5">
+        <header class="bg-white lg:rounded-[20px] lg:max-w-[1331px] w-full mx-auto lg:h-[81px] md:h-[70px] h-[55px] flex items-center justify-between lg:px-[49px] px-5 shadow-[0_5px_50px_0_rgba(0,0,0,0.25)] navbar-fixed">
+            <div class="flex-1">
+                <img src="../assets/images/logo.png" alt="Logo" class="lg:-ml-[95px] md:-ml-[65px] -ml-[40px] lg:w-[320px] lg:h-[50px] h-auto" />
             </div>
-            <div class="flex justify-end items-center nav">
+            <div class="flex flex-1 justify-end nav">
                 <button class="lg:hidden">
                     <span class="block w-[30px] h-[2px] my-2 bg-gray"></span>
                     <span class="block w-[30px] h-[2px] my-2 bg-gray"></span>
                     <span class="block w-[30px] h-[2px] my-2 bg-gray"></span>
                 </button>
                 <div class="menu hidden lg:block absolute lg:relative top-full left-0 right-0 p-5 lg:p-0 w-full bg-white">
-                    <!-- Show desktop only -->
-                    <ul class="items-center gap-[66px] block lg:hidden">
-                        <li><a href="#" class="text-[20px] font-semibold text-primary lang" key="about">About us</a></li>
-                        <li><a href="#" class="text-[20px] font-semibold text-primary lang" key="feature">Feature</a></li>
-                        <li><a href="./price.html" class="text-[20px] font-semibold text-primary lang" key="price">Price</a></li>
-                    </ul>
-                    <ul class="lg:flex justify-between items-center space-y-4 lg:space-y-0">
-                        <li class="lg:mr-[15px] xl:mr-[66px]"><a href="./booking.html" class="text-[20px] font-semibold text-primary lang" key="book-now">Book Now</a></li>
+                    <ul class="lg:flex justify-between items-center space-y-2 lg:space-y-0">
+                        <li><a href="#" class="text-[20px] font-semibold text-primary">About us</a></li>
+                        <li><a href="#" class="text-[20px] font-semibold text-primary">Feature</a></li>
+                        <li><a href="#" class="text-[20px] font-semibold text-primary">Testimonial</a></li>
                         <li>
-                            <div class="flex flex-row items-center">
-                                <div class="dropdown mr-4">
-                                    <a class="dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                        <i class="flag-icon flag-icon-id"></i> IND
-                                    </a>
-                                    <div class="dropdown-menu translate" aria-labelledby="navbarDropdown">                  
-                                        <a class="dropdown-item active" href="#" data-value="id"><i class="flag-icon flag-icon-id"></i> IND</a>
-                                        <a class="dropdown-item" href="#" data-value="en"><i class="flag-icon flag-icon-us"></i> ENG</a>
+                            <a href="#">
+                                <div class="rounded-[15px] p-[3px] bg-gradient-to-t from-primary to-[#8FAFFF]">
+                                    <div class="flex justify-center rounded-[12px] bg-white px-7 py-2">
+                                        <span class="text-[20px] font-semibold text-primary">Login</span>
                                     </div>
                                 </div>
-                                <a href="#">
-                                    <div class="rounded-[15px] p-[3px] bg-gradient-to-t from-primary to-[#8FAFFF]">
-                                        <div class="flex justify-center items-center rounded-[12px] bg-white px-7 min-h-[41px]">
-                                            <span class="text-[20px] font-semibold text-primary">Login</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </header>
-        <div class="container mx-auto px-5 pt-[95px] mb-[38px]">
+        <div class="container mx-auto lg:px-0 px-5 pt-[95px] pb-[250px]">
             <div class="flex justify-between items-center">
-                <div class="flex-1 z-[1] lg:pr-5 fade-to-right">
-                    <h1 class="text-primary md:text-[40px] xl:text-[60px] text-[30px] font-bold">Your One Stop<br />Pet Clinic Solution</h1>
-                    <p class="text-gray md:text-base mb-[30px] md:text-[18px] text-[14px]">We help veterinarians and veterinary clinic owners to manage clinic operations from client arrivals, bookings, payments, patient ambulators, databases of tools and medicines, and financial reports that can be updated in real time</p>
-                    <div class="lg:flex flex-row gap-6 space-y-3 lg:space-y-0">
-                        <a href="#" class="btn bg-primary text-white min-w-[250px] text-center uppercase lang" key="free-trial">FREE TRIAL</a>
-                        <a href="#" class="btn bg-white text-primary min-w-[250px] border border-primary text-center">Whatsapp Sales</a>
-                    </div>
+                <div class="flex-1 z-[1] fade-to-right">
+                    <h1 class="text-white md:text-[35px] lg:text-[50px] xl:text-[65px] text-[30px] font-bold">Your One Stop Pet Clinic Solution</h1>
+                    <p class="text-white md:text-base mb-4 lg:text-[18px] text-[14px]">We help veterinarians and veterinary clinic owners to manage clinic operations from client arrivals, bookings, payments, patient ambulators, databases of tools and medicines, and financial reports that can be updated in real time</p>
+                    <a href="#" class="btn bg-white text-primary">Book FREE Demo</a>
                 </div>
                 <div class="flex md:flex-1 justify-end relative">
                     <div class="z-[1] fade-to-left">
                         <img src="../assets//images/laptop-1.png" alt="image" class="w-full -mr-10 md:block hidden" />
                     </div>
 
-                    <span class="absolute w-[527px] h-[527px] bg-white rounded-full bg-gradient-to-t from-white to-primary opacity-10 -top-20 -right-60"></span>
+                    <span class="absolute w-[527px] h-[527px] bg-white rounded-full bg-gradient-to-t from-primary to-[#FFFFFF] opacity-10 -top-20 -right-60"></span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="container mx-auto relative px-10 fade-to-top">
-        <div class="md:flex flex-wrap lg:flex-nowrap justify-between space-y-5 lg:space-y-0 lg:gap-5">
-            <div class="w-full lg:max-w-[374px] min-h-[265px] mx-auto md:mx-0 border-[1px] border-[#085EB5] shadow-xl rounded-lg bg-white px-7 pb-[40px]">
-                <div class="pt-[91px]">
+    <section class="relative fade-to-top grid-cols-2">
+        <div class="md:flex flex-wrap lg:flex-nowrap gap-[18px] space-y-[18px] md:space-y-0 px-5 justify-center -mt-[175px] md:-bottom-16 left-0 right-0">
+            <div class="max-w-[345px] lg:max-w-[374px] h-[246px] mx-auto md:mx-0 border-[1px] border-[#085EB5] shadow-xl rounded-lg bg-white px-7 py-5">
+                <div class="pt-[80px]">
                     <a href="#" class="text-primary md:text-[24px] text-[20px] font-bold">Efficient operations veterinary service</a>
                     <p class="md:text-[18px] text-[14px] text-gray">We help veterinarians and veterinary clinic owners to</p>
                 </div>
             </div>
-            <div class="w-full lg:max-w-[374px] min-h-[265px] mx-auto md:mx-0 border-[1px] border-[#085EB5] shadow-xl rounded-lg bg-white px-7 pb-[40px]">
-                <div class="pt-[91px]">
+            <div class="max-w-[345px] lg:max-w-[374px] h-[246px] mx-auto md:mx-0 border-[1px] border-[#085EB5] shadow-xl rounded-lg bg-white px-7 py-5">
+                <div class="pt-[80px]">
                     <a href="#" class="text-primary md:text-[24px] text-[20px] font-bold">Efficient operations veterinary service</a>
                     <p class="md:text-[18px] text-[14px] text-gray">We help veterinarians and veterinary clinic owners to</p>
                 </div>
             </div>
-            <div class="w-full lg:max-w-[374px] min-h-[265px] mx-auto md:mx-0 border-[1px] border-[#085EB5] shadow-xl rounded-lg bg-white px-7 pb-[40px]">
-                <div class="pt-[91px]">
+            <div class="max-w-[345px] lg:max-w-[374px] h-[246px] mx-auto md:mx-0 border-[1px] border-[#085EB5] shadow-xl rounded-lg bg-white px-7 py-5">
+                <div class="pt-[80px]">
                     <a href="#" class="text-primary md:text-[24px] text-[20px] font-bold">Efficient operations veterinary service</a>
                     <p class="md:text-[18px] text-[14px] text-gray">We help veterinarians and veterinary clinic owners to</p>
                 </div>
@@ -110,51 +82,47 @@
         </div>
     </section>
 
-    <div class="bg-gradient-to-t from-[#D6E7FA] to-[#f3f8fc] pt-[100px] -mt-[125px]">
-        <!-- powered by -->
-        <section class="container mx-auto mt-[110px] md:px-20 px-5 mb-[114px] fade-to-top">
-            <div class="flex flex-col items-center mb-[10px]">
-                <h4 class="md:text-[20px] text-[16px] font-semibold text-[#C4C7CF]">POWERED BY</h4>
-                <img src="../assets/images/logo-vettalk.png" alt="Powered By" class="md:w-[382px] md:h-[144px]" />
-            </div>
-            <p class="md:text-[18px] text-[14px] text-gray text-center">Vettalk Indonesia is a pet clinic consultant that is expanding digital-based pet clinics' innovations, along with supporting veterinarians in upgrading their skills to adapt to the era of Industrial Revolution 4.0</p>
-        </section>
+    <!-- powered by -->
+    <section class="container mx-auto mt-[110px] md:px-20 px-5 mb-[114px] fade-to-top">
+        <div class="flex flex-col items-center mb-[10px]">
+            <h4 class="md:text-[20px] text-[16px] font-semibold text-[#C4C7CF]">POWERED BY</h4>
+            <img src="../assets/images/logo-vettalk.png" alt="Powered By" class="md:w-[382px] md:h-[144px]" />
+        </div>
+        <p class="md:text-[18px] text-[14px] text-gray text-center">Vettalk Indonesia is a pet clinic consultant that is expanding digital-based pet clinics' innovations, along with supporting veterinarians in upgrading their skills to adapt to the era of Industrial Revolution 4.0</p>
+    </section>
 
-        <!-- adds -->
-        <section class="container mx-auto md:px-20 px-5 md:flex justify-end relative md:mb-[137px] block fade-to-top">
-            <!-- <div class="md:flex md:w-[959px] md:h-auto max-h-[389px] rounded-[30px] shadow-lg border-[1px] border-[#F5F9FC] bg-white mx-auto relative"> -->
-            <div class="md:flex md:w-[959px] rounded-[30px] shadow-lg border-[1px] border-[#F5F9FC] bg-white mx-auto relative">
-                <span class="md:min-w-[45%] lg:min-w-[419px] min-h-[150px] block bg-gradient-to-t from-[#2469DF] to-[#F5F9FC] rounded-[30px]"></span>
-                <div class="md:pl-[31px] md:pr-[49px] md:py-12 px-5 py-8">
-                    <h2 class="text-[20px] md:text-[25px] lg:text-[30px] font-bold text-primary mb-1">Manage all patient and clinic operations with just your device!</h2>
-                    <a href="#" class="btn bg-primary text-white">Book FREE Demo</a>
-                </div>
-                <div class="absolute md:-bottom-8 md:-left-20 lg:-left-20 bottom-0 -top-12 md:top-auto">
-                    <!-- <img src="../assets/images/laptop-2.png" alt="Image" class="w-[350px] md:w-[60%] lg:w-[80%] xl:w-[521px] xl:h-[315px]" /> -->
-                    <img src="../assets/images/laptop-2.png" alt="Image" class="max-w-[350px] max-h-[315px]" />
-                </div>
+    <!-- adds -->
+    <section class="container mx-auto md:px-20 px-5 md:flex justify-end relative mb-[137px] block fade-to-top">
+        <div class="md:flex md:w-[959px] md:h-auto lg:h-[389px] rounded-[30px] shadow-lg border-[1px] border-[#F5F9FC]">
+            <span class="md:min-w-[45%] lg:min-w-[419px] min-h-[150px] block bg-gradient-to-t from-[#2469DF] to-[#F5F9FC] rounded-[30px]"></span>
+            <div class="md:pl-[31px] md:pr-[49px] md:py-12 px-5 py-8">
+                <h2 class="text-[20px] md:text-[25px] lg:text-[40px] font-bold text-primary mb-1">Manage all patient and clinic operations with just your device!</h2>
+                <a href="#" class="btn bg-primary text-white">Book FREE Demo</a>
             </div>
-        </section>
+        </div>
+        <div class="absolute md:-bottom-8 md:left-6 lg:left-0 xl:left-14 -top-[45px] md:top-auto">
+            <img src="../assets/images/laptop-2.png" alt="Image" class="w-[350px] md:w-[60%] lg:w-[80%] xl:w-[521px] xl:h-[315px]" />
+        </div>
+    </section>
 
-        <!-- all feature -->
-        <section class="pt-[79px] pb-[90px] mb-[95px] fade-to-top">
-            <div class="container mx-auto md:px-20 px-5">
-                <h1 class="text-primary md:text-[35px] lg:text-[50px] xl:text-[65px] text-[30px] font-bold text-center mb-[33px]">Watch All Feature</h1>
-                <div class="border-[2px] md:rounded-[30px] rounded-2xl border-primary mb-[44px] overflow-clip max-w-[1032px] max-h-[497px] mx-auto">
-                    <img src="../assets/images/all-feature.png" alt="All Feature" class="w-full" />
-                </div>
-                <div class="flex justify-center">
-                    <a href="#" class="btn bg-primary text-white">Book FREE Demo Now</a>
-                </div>
+    <!-- all feature -->
+    <section class="bg-gradient-to-t from-[#D6E7FA] to-[#d6e7fa00] pt-[79px] pb-[90px] mb-[95px] fade-to-top">
+        <div class="container mx-auto md:px-20 px-5">
+            <h1 class="text-primary md:text-[35px] lg:text-[50px] xl:text-[65px] text-[30px] font-bold text-center mb-[33px]">Watch All Feature</h1>
+            <div class="border-[2px] md:rounded-[30px] rounded-2xl border-primary mb-[44px] overflow-clip">
+                <img src="../assets/images/all-feature.png" alt="All Feature" class="max:w-[1032px] max:h-[510px]" />
             </div>
-        </section>
-    </div>
+            <div class="flex justify-center">
+                <a href="#" class="btn bg-primary text-white">Book FREE Demo Now</a>
+            </div>
+        </div>
+    </section>
 
     <!-- review -->
     <section class="container mx-auto md:px-16 px-5 mb-[133px] fade-to-bottom">
         <div class="md:columns-2 md:gap-11 space-bottom-8">
             <div class="w-full inline-block fade-to-top">
-                <h1 class="text-primary md:text-[35px] lg:text-[50px] xl:text-[65px] text-[30px] font-bold md:-ml-10">What They Say<br/>About Us?</h1>
+                <h1 class="text-primary md:text-[35px] lg:text-[50px] xl:text-[65px] text-[30px] font-bold md:-ml-10">What They Say About Us?</h1>
             </div>
             <div class="w-full inline-block fade-to-top">
                 <div class="w-full md:px-8 px-5 md:py-7 py-4 rounded-[10px] bg-primary text-white">
@@ -213,6 +181,25 @@
                     <p class="lg:text-[18px] text-[14px]">We help veterinarians and veterinary clinic owners to manage clinic operations from client arrivals, bookings, payments, patient ambulator, databases of tools and medicines, and financial reports that can be updated in real time</p>
                 </div>
             </div>
+            <div class="w-full inline-block fade-to-top">
+                <div class="w-full md:px-8 px-5 md:py-7 py-4 rounded-[10px] border-[1px] border-[#D9D9D9]">
+                    <div class="flex items-center xl:flex-nowrap flex-wrap">
+                        <div class="flex items-center">
+                            <div class="min-w-[65px] h-[65px] rounded-full bg-white border-[1px] border-[#000000]"></div>
+                            <p class="px-4 break-words">Drh. Putri Ayu Pertiwi (Owner Petclinic)</p>
+                        </div>
+                        <div class="flex gap-2 w-full xl:w-auto mt-1 xl:mt-0 justify-end">
+                            <img src="../assets/images/ic-star.svg" class="xl:w-auto md:w-6 w-5" />
+                            <img src="../assets/images/ic-star.svg" class="xl:w-auto md:w-6 w-5" />
+                            <img src="../assets/images/ic-star.svg" class="xl:w-auto md:w-6 w-5" />
+                            <img src="../assets/images/ic-star.svg" class="xl:w-auto md:w-6 w-5" />
+                            <img src="../assets/images/ic-star.svg" class="xl:w-auto md:w-6 w-5" />
+                        </div>
+                    </div>
+                    <hr class="my-4 border-border" />
+                    <p class="lg:text-[18px] text-[14px]">We help veterinarians and veterinary clinic owners to manage clinic operations from client arrivals, bookings, payments, patient ambulator, databases of tools and medicines, and financial reports that can be updated in real time</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -246,7 +233,5 @@
     <!-- <script src="../../node_modules/jquery/dist/jquery.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="../assets/js/script.js"></script>
-    <script src="../assets/js/const.js"></script>
-    <script src="../assets/js/translate.js"></script>
 </body>
 </html>
