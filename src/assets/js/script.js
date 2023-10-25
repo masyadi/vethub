@@ -1,3 +1,11 @@
+// FORMAT NUMBER
+window.formatNumber = (number, thousand = ",") => {
+    return number
+        .toString()
+        .replace(/[.,\s]/g, "")
+        .replace(/(\d)(?=(\d{3})+(?!\d))/g, `$1${thousand}`);
+};
+
 if ($(".nav").length) {
     const nav = $(".nav");
     const btnMenu = $(nav).find("button");
@@ -59,3 +67,52 @@ $(window).on("scroll", function () {
 
 // initial trigger scroll
 $(window).trigger("scroll");
+
+// Tabs
+if ($(".tab").length) {
+    const btnDefault = $(".tab").first();
+    $(btnDefault).addClass("active");
+
+    $(".tab").on("click", function (e) {
+        e.preventDefault();
+        const id = $(this).data("id");
+
+        // remove all active class
+        $(".tab").removeClass("active");
+
+        if (!$(this).hasClass("active")) {
+            $(this).addClass("active");
+
+            $(".tab-item").hide();
+            $(`[data-item=${id}]`).fadeIn();
+        }
+    });
+}
+
+// Requeired field flag
+if ($(".form-group").length) {
+    $("span.required").remove();
+    $(".form-group").each(function () {
+        if ($(this).find(".form-control").attr("required")) {
+            $(this).find("label").append('<span class="required"> *</span>');
+        }
+    });
+
+    if ($("label.required").length) {
+        $("label.required").append('<span class="required"> *</span>');
+    }
+}
+
+if ($(".dropdown-toggle").length) {
+    $(".dropdown-toggle").on("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $(".dropdown-menu").toggle();
+    });
+
+    $("body")
+        .not(".dropdown-toggle, .dropdown-menu")
+        .on("click", function () {
+            $(".dropdown-menu").hide();
+        });
+}

@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       container: {
         screens: {
-          lg: '1200px',
+          lg: '1613px',
         },
       },
       colors: {
