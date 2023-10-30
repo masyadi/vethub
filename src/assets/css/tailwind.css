@@ -569,8 +569,8 @@ body {
   bottom: 0px;
 }
 
-.bottom-\[-485px\] {
-  bottom: -485px;
+.bottom-\[-255px\] {
+  bottom: -255px;
 }
 
 .left-0 {
@@ -764,8 +764,8 @@ body {
   margin-left: 0.5rem;
 }
 
-.ml-\[-190px\] {
-  margin-left: -190px;
+.ml-\[-65px\] {
+  margin-left: -65px;
 }
 
 .mr-4 {
@@ -826,10 +826,6 @@ body {
 
 .h-\[65px\] {
   height: 65px;
-}
-
-.h-\[98px\] {
-  height: 98px;
 }
 
 .h-auto {
@@ -896,10 +892,6 @@ body {
   width: 350px;
 }
 
-.w-\[488px\] {
-  width: 488px;
-}
-
 .w-\[52\%\] {
   width: 52%;
 }
@@ -914,6 +906,10 @@ body {
 
 .w-\[589px\] {
   width: 589px;
+}
+
+.w-\[65px\] {
+  width: 65px;
 }
 
 .w-\[70\%\] {
@@ -958,6 +954,10 @@ body {
 
 .max-w-\[350px\] {
   max-width: 350px;
+}
+
+.max-w-\[488px\] {
+  max-width: 488px;
 }
 
 .max-w-\[750px\] {
@@ -1072,6 +1072,10 @@ body {
   --tw-space-y-reverse: 0;
   margin-top: calc(18px * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(18px * var(--tw-space-y-reverse));
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .overflow-clip {
@@ -1309,14 +1313,14 @@ body {
   padding-right: 13px;
 }
 
+.px-\[30px\] {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .px-\[47px\] {
   padding-left: 47px;
   padding-right: 47px;
-}
-
-.px-\[50px\] {
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 .px-\[66px\] {
@@ -1369,6 +1373,10 @@ body {
   padding-bottom: 50px;
 }
 
+.pb-\[140px\] {
+  padding-bottom: 140px;
+}
+
 .pb-\[250px\] {
   padding-bottom: 250px;
 }
@@ -1389,12 +1397,12 @@ body {
   padding-bottom: 95px;
 }
 
-.pl-\[250px\] {
-  padding-left: 250px;
+.pl-\[45px\] {
+  padding-left: 45px;
 }
 
-.pl-\[60px\] {
-  padding-left: 60px;
+.pl-\[70px\] {
+  padding-left: 70px;
 }
 
 .pr-10 {
@@ -1405,16 +1413,16 @@ body {
   padding-right: 14px;
 }
 
-.pr-\[60px\] {
-  padding-right: 60px;
+.pr-\[45px\] {
+  padding-right: 45px;
 }
 
 .pt-\[100px\] {
   padding-top: 100px;
 }
 
-.pt-\[275px\] {
-  padding-top: 275px;
+.pt-\[240px\] {
+  padding-top: 240px;
 }
 
 .pt-\[58px\] {
@@ -1447,6 +1455,10 @@ body {
 
 .text-\[16px\] {
   font-size: 16px;
+}
+
+.text-\[18px\] {
+  font-size: 18px;
 }
 
 .text-\[20px\] {
@@ -1504,10 +1516,6 @@ body {
 
 .leading-\[50px\] {
   line-height: 50px;
-}
-
-.leading-\[80px\] {
-  line-height: 80px;
 }
 
 .text-\[\#6F6969\] {
@@ -1823,6 +1831,10 @@ span.required {
     left: -5rem;
   }
 
+  .md\:bottom-\[-455px\] {
+    bottom: -455px;
+  }
+
   .md\:left-6 {
     left: 1.5rem;
   }
@@ -1965,12 +1977,20 @@ span.required {
     padding-bottom: 1.75rem;
   }
 
+  .md\:pb-\[220px\] {
+    padding-bottom: 220px;
+  }
+
   .md\:pl-\[31px\] {
     padding-left: 31px;
   }
 
   .md\:pr-\[49px\] {
     padding-right: 49px;
+  }
+
+  .md\:pt-\[275px\] {
+    padding-top: 275px;
   }
 
   .md\:text-\[18px\] {
@@ -2017,6 +2037,10 @@ span.required {
     left: -5rem;
   }
 
+  .lg\:bottom-\[-485px\] {
+    bottom: -485px;
+  }
+
   .lg\:left-0 {
     left: 0px;
   }
@@ -2047,6 +2071,10 @@ span.required {
 
   .lg\:-ml-\[95px\] {
     margin-left: -95px;
+  }
+
+  .lg\:ml-\[-190px\] {
+    margin-left: -190px;
   }
 
   .lg\:mr-\[-50px\] {
@@ -2087,6 +2115,10 @@ span.required {
 
   .lg\:h-\[81px\] {
     height: 81px;
+  }
+
+  .lg\:h-\[98px\] {
+    height: 98px;
   }
 
   .lg\:min-h-\[835px\] {
@@ -2153,8 +2185,29 @@ span.required {
     padding-right: 49px;
   }
 
+  .lg\:px-\[50px\] {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .lg\:pb-\[250px\] {
+    padding-bottom: 250px;
+  }
+
+  .lg\:pl-\[215px\] {
+    padding-left: 215px;
+  }
+
+  .lg\:pl-\[60px\] {
+    padding-left: 60px;
+  }
+
   .lg\:pr-5 {
     padding-right: 1.25rem;
+  }
+
+  .lg\:pr-\[60px\] {
+    padding-right: 60px;
   }
 
   .lg\:pt-10 {
@@ -2167,6 +2220,10 @@ span.required {
 
   .lg\:text-\[30px\] {
     font-size: 30px;
+  }
+
+  .lg\:text-\[35px\] {
+    font-size: 35px;
   }
 
   .lg\:text-\[40px\] {
@@ -2203,6 +2260,10 @@ span.required {
     margin-top: 0px;
   }
 
+  .xl\:flex {
+    display: flex;
+  }
+
   .xl\:h-\[315px\] {
     height: 315px;
   }
@@ -2227,9 +2288,23 @@ span.required {
     gap: 66px;
   }
 
+  .xl\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
   .xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .xl\:pl-\[250px\] {
+    padding-left: 250px;
+  }
+
+  .xl\:text-left {
+    text-align: left;
   }
 
   .xl\:text-\[60px\] {
