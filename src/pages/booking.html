@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="../assets/css/tailwind.css" rel="stylesheet" />
 </head>
 
@@ -79,7 +80,8 @@
     <section class="container mx-auto mb-[82px]">
         <div class="flex flex-row items-center gap-[67px]">
             <div class="min-w-[957px] rounded-[40px] bg-[#F3F8FC] px-[66px] py-[32px]">
-                <form>
+                <form method="post" action="https://apisg.vethub.id/api">
+                    <span class="ajax-request"></span>
                     <h3 class="text-primary text-[50px] font-semibold lang" key="personal-information">Personal Information</h3>
                     <div class="form-group">
                         <label class="text-[35px]"><span class="lang" key="full-name">Full Name</span></label>
@@ -88,33 +90,33 @@
                     <div class="flex flex-row gap-[28px]">
                         <div class="form-group">
                             <label class="text-[35px]"><span class="lang" key="position">Position</span></label>
-                            <input type="text" name="name" class="form-control" required />
+                            <input type="text" name="position" class="form-control" required />
                         </div>
                         <div class="form-group">
                             <label class="text-[35px]">Email</label>
-                            <input type="text" name="name" class="form-control" required />
+                            <input type="text" name="email" class="form-control" required />
                         </div>
                     </div>
                     <div class="flex w-1/2 pr-[14px] mb-[20px]">
                         <div class="form-group">
                             <label class="text-[35px]"><span class="lang" key="whatsapp-active">Whatsapp Active</span></label>
-                            <input type="text" name="name" class="form-control" required />
+                            <input type="text" name="whatsapp" class="form-control" required />
                         </div>
                     </div>
                     <h3 class="text-primary text-[50px] font-semibold lang" key="clinic-information"><span>Clinic Information</span></h3>
                     <div class="form-group">
                         <label class="text-[35px]"><span class="lang" key="clinic-name">Clinic Name</span></label>
-                        <input type="text" name="name" class="form-control" required />
+                        <input type="text" name="clinic_name" class="form-control" required />
                     </div>
                     <div class="form-group">
                         <label class="text-[35px] required"><span class="lang" key="clinic-type">Type</span></label>
                         <div class="flex gap-4">
                             <div class="flex items-center">
-                                <input type="radio" value="" name="type" class="w-[25px] h-[25px]" checked />
+                                <input type="radio" value="Veterinary Practice" name="type" class="w-[25px] h-[25px]" checked />
                                 <label class="ml-2 text-[35px] lang" key="veterinary-practice">Veterinary Practice</label>
                             </div>
                             <div class="flex items-center">
-                                <input type="radio" value="" name="type" class="w-[25px] h-[25px]" />
+                                <input type="radio" value="Veterinary Clinic" name="type" class="w-[25px] h-[25px]" />
                                 <label class="ml-2 text-[35px] lang" key="veterinary-clinic">Veterinary Clinic</label>
                             </div>
                         </div>
@@ -122,13 +124,13 @@
                     <div class="flex w-1/2 pr-[14px] mb-[20px]">
                         <div class="form-group">
                             <label class="text-[35px]"><span class="lang" key="clinic-address">Address</span></label>
-                            <input type="text" name="name" class="form-control" required />
+                            <input type="text" name="address" class="form-control" required />
                         </div>
                     </div>
                     <div class="flex w-1/2 pr-[14px] mb-[20px]">
                         <div class="form-group">
                             <label class="text-[35px]"><span class="lang" key="city">City</span></label>
-                            <input type="text" name="name" class="form-control" required />
+                            <input type="text" name="city" class="form-control" required />
                         </div>
                     </div>
                     <div class="form-group">
@@ -136,12 +138,12 @@
                     </div>
                     <div class="form-group">
                         <div class="flex items-center">
-                            <input type="radio" value="" name="type" class="w-[25px] h-[25px]" />
+                            <input type="radio" value="1" name="subscribe" class="w-[25px] h-[25px]" />
                             <label class="ml-2 text-[30px] font-medium lang" key="yes-i-want-to-subscribe-now">Yes, i want to subscribe now</label>
                         </div>
                     </div>
                     <div class="mt-[7px]">
-                        <button type="submit" class="btn bg-primary text-white min-w-[330px] text-center cursor-pointer mb-[33px] lang" key="send-request">Send Request</button>
+                        <button type="submit" class="btn bg-primary text-white min-w-[330px] text-center cursor-pointer mb-[33px] lang" key="send-request" data-label="Loading...">Send Request</button>
                     </div>
                 </form>
             </div>
@@ -163,7 +165,9 @@
 
     <!-- <script src="../../node_modules/jquery/dist/jquery.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../assets/js/script.js"></script>
     <script src="../assets/js/translate.js"></script>
+    <script src="../assets/js/ajax.js"></script>
 </body>
 </html>
